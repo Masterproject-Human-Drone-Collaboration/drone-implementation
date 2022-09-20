@@ -1,10 +1,10 @@
-# drone-implementation
+# Drone-Implementation
 
 Server &amp; client implementation for the multi-drone master's project
 
 Structure based on the following create, retrieve, update and delete (CRUD) example: https://testdriven.io/blog/developing-a-single-page-app-with-flask-and-vuejs/#put-route
 
-# dependencies
+# Dependencies
 
 - Vue v2.6.11
 - Vue CLI v4.5.11
@@ -13,17 +13,19 @@ Structure based on the following create, retrieve, update and delete (CRUD) exam
 - Flask v2.1.0
 - Python v3.9.1
 
-# setup
+# Setup
 
 Initial setup
 
 - Install Python 3.9.X
 - Install Node.js
+- In a global admin CMD: npm install -g @vue/cli
 - Install VSCode
 - In VSCode, install the Prettier Extension
-- In vSCode, go to File -> Preferences -> Settings, search for editor: format on save and check it on. Then, search for editor: default formatter and set the default formatter to Prettier
-
-Create a virtual environment:
+- In VSCode, go to File -> Preferences -> Settings, search for editor: format on save and check it on. Then, search for editor: default formatter and set the default formatter to Prettier
+- Open the project folder with VSCode
+- Always make shure to set VSCode to LF and not CRLF! (you can see the option at the bottom of VSCode)
+  Create a virtual environment:
 
 - Open an admin CMD in the project folder
 - cd server
@@ -34,19 +36,12 @@ Create a virtual environment:
 - Backend should now be reachable under http://localhost:5000/ping
 - To stop server, press Ctrl + C in terminal
 
-Vue Setup
-
-- Install Node.js
-- In a global admin CMD: npm install -g @vue/cli
-- npm install --save-dev eslint eslint-plugin-vue
-- Within the project folder (the one with server & frontend) run: vue create client
-- npm install axios@0.21.1 --save
-- npm install bootstrap@4.6.0 --save
-
 Fire up development server
 
 - cd client
 - npm run serve
+- Client should now be reachable under http://localhost:8080
+- You can click the errors away in the top-right. Errors shouldn't appear if you set up VSCode correctly with Prettier and made sure that every file is LF and NOT CRLF.
 
 # Structure
 
