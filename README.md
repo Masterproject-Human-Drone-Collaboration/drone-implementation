@@ -15,6 +15,14 @@ Structure based on the following create, retrieve, update and delete (CRUD) exam
 
 # setup
 
+Initial setup
+
+- Install Python 3.9.X
+- Install Node.js
+- Install VSCode
+- In VSCode, install the Prettier Extension
+- In vSCode, go to File -> Preferences -> Settings, search for editor: format on save and check it on. Then, search for editor: default formatter and set the default formatter to Prettier
+
 Create a virtual environment:
 
 - Open an admin CMD in the project folder

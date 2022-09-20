@@ -1,4 +1,6 @@
 <!-- TODO: Books.vue should serve as the basis of the admin panel. A simplified version without add/update buttons can be used for commander panel.-->
+
+<!-- Template Section -> Display elements -->
 <template>
   <div id="vue" class="container">
     <div>
@@ -159,6 +161,7 @@
   </div>
 </template>
 
+<!-- Script Section -> Logic for site & display elements -->
 <script>
 import axios from "axios";
 import Alert from "./Alert.vue";
@@ -308,6 +311,7 @@ export default {
 };
 </script>
 
+<!-- Style Section -> How display elements should look -->
 <style>
 #vue {
   display: flex;
