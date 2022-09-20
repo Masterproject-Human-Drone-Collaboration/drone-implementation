@@ -10,7 +10,6 @@
         <h1>Books</h1>
         <hr />
         <br /><br />
-        <!-- TODO: Timeout for the alert so that it disappears after 5 seconds -->
         <alert :message="message" v-if="showMessage"></alert>
         <button
           type="button"
@@ -208,6 +207,7 @@ export default {
           this.getBooks();
           this.message = "Book added!";
           this.showMessage = true;
+          setTimeout(this.onAlertTimeout, 3000);
         })
         .catch((error) => {
           // eslint-disable-next-line
@@ -265,6 +265,7 @@ export default {
           this.getBooks();
           this.message = "Book updated!";
           this.showMessage = true;
+          setTimeout(this.onAlertTimeout, 3000);
         })
         .catch((error) => {
           // eslint-disable-next-line
@@ -286,6 +287,7 @@ export default {
           this.getBooks();
           this.message = "Book removed!";
           this.showMessage = true;
+          setTimeout(this.onAlertTimeout, 3000);
         })
         .catch((error) => {
           // eslint-disable-next-line
@@ -295,6 +297,9 @@ export default {
     },
     onDeleteBook(book) {
       this.removeBook(book.id);
+    },
+    onAlertTimeout() {
+      this.showMessage = false;
     },
   },
   created() {
