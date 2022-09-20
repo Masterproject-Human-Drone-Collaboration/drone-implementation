@@ -53,9 +53,10 @@ The client/public/index.html file is the starting point of our Vue application.
 The client/src/router/index.js file describes the routers of the frontend.
 
 The client/src/components directory contains different .vue files. The .vue files are single file components which are broken up into three different sections:
-1.) template: for component-specific HTML
-2.) script: where the component logic is implemented via JavaScript
-3.) style: for CSS styles
+
+1. template: for component-specific HTML
+2. script: where the component logic is implemented via JavaScript
+3. style: for CSS styles
 
 The client/src/App.vue file is the root .vue file into which the other .vue files will be inserted when the frontend is displayed.
 
