@@ -46,7 +46,7 @@ Fire up development server
 - Client should now be reachable under http://localhost:8080
 - You can click the errors away in the top-right. Errors shouldn't appear if you set up VSCode correctly with Prettier and made sure that every file is LF and NOT CRLF.
 
-# Structure
+# Structure Client/Frontend
 
 The client/public/index.html file is the starting point of our Vue application.
 
@@ -58,3 +58,7 @@ The client/src/components directory contains different .vue files. The .vue file
 3.) style: for CSS styles
 
 The client/src/App.vue file is the root .vue file into which the other .vue files will be inserted when the frontend is displayed.
+
+# Structure Server/Backend
+
+Everything is handled in the server/app.py file.
