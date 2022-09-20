@@ -25,8 +25,10 @@ Initial setup
 - In VSCode, go to File -> Preferences -> Settings, search for editor: format on save and check it on. Then, search for editor: default formatter and set the default formatter to Prettier
 - Open the project folder with VSCode
 - Always make shure to set VSCode to LF and not CRLF! (you can see the option at the bottom of VSCode)
-  Create a virtual environment:
 
+Create a virtual environment:
+
+- In a new Terminal
 - Open an admin CMD in the project folder
 - cd server
 - pip install pipenv
@@ -38,6 +40,7 @@ Initial setup
 
 Fire up development server
 
+- In a new Terminal
 - cd client
 - npm run serve
 - Client should now be reachable under http://localhost:8080
