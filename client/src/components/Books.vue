@@ -1,5 +1,10 @@
+<!-- TODO: Books.vue should serve as the basis of the admin panel. A simplified version without add/update buttons can be used for commander panel.-->
 <template>
-  <div class="container">
+  <div id="vue" class="container">
+    <div>
+      <h1>Streams</h1>
+      <!-- TODO: Display two vue components, one for each drone stream -->
+    </div>
     <div class="row">
       <div class="col-sm-10">
         <h1>Books</h1>
@@ -297,3 +302,13 @@ export default {
   },
 };
 </script>
+
+<style>
+#vue {
+  display: flex;
+}
+#vue > div {
+  width: 50%;
+  padding: 5px;
+}
+</style>
